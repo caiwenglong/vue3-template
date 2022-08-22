@@ -39,16 +39,8 @@ interface ImportMetaEnv {
   readonly VITE_SERVICE_ENV?: ServiceEnvType;
   /** 开启请求代理 */
   readonly VITE_HTTP_PROXY?: 'Y' | 'N';
-  /** 是否开启打包文件大小结果分析 */
-  readonly VITE_VISUALIZER?: 'Y' | 'N';
-  /** 是否开启打包压缩 */
-  readonly VITE_COMPRESS?: 'Y' | 'N';
-  /** 压缩算法类型 */
-  readonly VITE_COMPRESS_TYPE?: 'gzip' | 'brotliCompress' | 'deflate' | 'deflateRaw';
   /** hash路由模式 */
   readonly VITE_HASH_ROUTE?: 'Y' | 'N';
-  /** 是否是部署的vercel */
-  readonly VITE_VERCEL?: 'Y' | 'N';
 }
 
 interface ImportMeta {

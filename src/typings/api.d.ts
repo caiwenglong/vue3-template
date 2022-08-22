@@ -21,35 +21,3 @@ declare namespace ApiRoute {
     home: AuthRoute.RouteKey;
   }
 }
-
-declare namespace ApiDemo {
-  interface DataWithAdapter {
-    dataId: string;
-    dataName: string;
-  }
-}
-
-declare namespace ApiUserManagement {
-  interface UserTable {
-    /** 用户id */
-    id: string;
-    /** 用户名 */
-    name: string;
-    /** 用户年龄 */
-    age: number;
-    /**
-     * 用户性别
-     * - 男 1
-     * - 女 0
-     */
-    gender: '0' | '1' | null;
-    /** 用户手机号码 */
-    phone: string;
-    /** 用户邮箱 */
-    email: string;
-    /** 用户角色 */
-    role: Auth.RoleType;
-    /** 是否禁用用户 */
-    disabled: boolean;
-  }
-}

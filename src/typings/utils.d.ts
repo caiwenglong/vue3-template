@@ -3,8 +3,6 @@ declare namespace TypeUtil {
 
   type UnionInclude<T, K extends keyof T> = K extends keyof T ? true : false;
 
-  type GetFunArgs<F extends Noop> = F extends (...args: infer P) => any ? P : never;
-
   type Writable<T> = { [K in keyof T]: T[K] };
 
   type FirstOfArray<T extends any[]> = T extends [infer First, ...infer _Rest] ? First : never;
