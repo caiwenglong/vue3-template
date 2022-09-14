@@ -1,7 +1,7 @@
 import type { PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import unocss from 'unocss/vite';
+import unocss from '@unocss/vite';
 import html from './html';
 import unplugin from './unplugin';
 import mock from './mock';
